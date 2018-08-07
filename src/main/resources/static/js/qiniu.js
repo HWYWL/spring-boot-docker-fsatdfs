@@ -5,7 +5,7 @@ layui.use('upload', function(){
     var demoListView = $('#qiniuFileList')
         , uploadListIns = upload.render({
         elem: '#qiniuSelectList'
-        , url: '/upload/'
+        , url: '/qiniu/upload/'
         , accept: 'file'
         , multiple: true
         , auto: false

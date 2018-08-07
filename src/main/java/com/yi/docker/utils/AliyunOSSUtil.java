@@ -26,11 +26,11 @@ public class AliyunOSSUtil {
 
     public static MessageResult upload(File file) {
         logger.info("=========>OSS文件上传开始：" + file.getName());
-        String endpoint = ConstantProperties.JAVA4ALL_END_POINT;
-        String accessKeyId = ConstantProperties.JAVA4ALL_ACCESS_KEY_ID;
-        String accessKeySecret = ConstantProperties.JAVA4ALL_ACCESS_KEY_SECRET;
-        String bucketName = ConstantProperties.JAVA4ALL_BUCKET_NAME1;
-        String fileHost = ConstantProperties.JAVA4ALL_FILE_HOST;
+        String endpoint = ConstantProperties.OSS_END_POINT;
+        String accessKeyId = ConstantProperties.OSS_ACCESS_KEY_ID;
+        String accessKeySecret = ConstantProperties.OSS_ACCESS_KEY_SECRET;
+        String bucketName = ConstantProperties.OSS_BUCKET_NAME1;
+        String fileHost = ConstantProperties.OSS_FILE_HOST;
 
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         String dateStr = format.format(new Date());
