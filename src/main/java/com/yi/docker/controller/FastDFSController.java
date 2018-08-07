@@ -35,6 +35,7 @@ public class FastDFSController {
     @ResponseBody
     public MessageResult singleFileUpload(@RequestParam("file") MultipartFile file) {
         HashMap<Object, Object> map = new HashMap<>(16);
+        MessageResult messageResult = MessageResult.ok();
 
         if (file.isEmpty()) {
             return MessageResult.errorMsg("请选择要上传的文件！");
@@ -45,9 +46,11 @@ public class FastDFSController {
             map.put("data", path);
         } catch (Exception e) {
             logger.error("上传失败！", e);
+            messageResult = MessageResult.errorMsg("上传失败！" + e.getMessage());
         }
+        messageResult.setData(map);
 
-        return MessageResult.ok(map);
+        return messageResult;
     }
 
     /**
