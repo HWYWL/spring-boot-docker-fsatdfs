@@ -1,4 +1,4 @@
-package com.yi.docker.fsatdfs;
+package com.yi.docker.model;
 
 public class FastDFSFile {
 	private String name;

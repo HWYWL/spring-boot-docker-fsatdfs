@@ -1,5 +1,6 @@
-package com.yi.docker.fsatdfs;
+package com.yi.docker.utils;
 
+import com.yi.docker.model.FastDFSFile;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
 import org.slf4j.LoggerFactory;
@@ -9,8 +10,13 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class FastDFSClient {
-	private static org.slf4j.Logger logger = LoggerFactory.getLogger(FastDFSClient.class);
+/**
+ * FastDFS文件系统操作
+ * @author YI
+ * @date 2018-8-7 10:37:27
+ */
+public class FastDFSClientUtil {
+	private static org.slf4j.Logger logger = LoggerFactory.getLogger(FastDFSClientUtil.class);
 
 	static {
 		try {
