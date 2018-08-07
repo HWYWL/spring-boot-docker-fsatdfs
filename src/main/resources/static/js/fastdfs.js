@@ -5,7 +5,7 @@ layui.use('upload', function(){
     var demoListView = $('#fastdfsFileList')
         , uploadListIns = upload.render({
         elem: '#fastdfsSelectList'
-        , url: '/upload/'
+        , url: '/fastdfs/upload/'
         , accept: 'file'
         , multiple: true
         , auto: false

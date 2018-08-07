@@ -7,12 +7,10 @@ import com.yi.docker.utils.FastDFSClientUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,6 +22,7 @@ import java.util.HashMap;
  * @date 2018-8-7 10:37:27
  */
 @Controller
+@RequestMapping("/fastdfs")
 public class FastDFSController {
     private static Logger logger = LoggerFactory.getLogger(FastDFSController.class);
 

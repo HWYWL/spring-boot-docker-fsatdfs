@@ -5,7 +5,7 @@ layui.use('upload', function(){
     var demoListView = $('#ossFileList')
         , uploadListIns = upload.render({
         elem: '#ossSelectList'
-        , url: '/upload/'
+        , url: '/oss/upload/'
         , accept: 'file'
         , multiple: true
         , auto: false
