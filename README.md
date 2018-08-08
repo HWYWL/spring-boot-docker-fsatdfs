@@ -60,6 +60,9 @@
 
 <span style="outline-style: initial; outline-width: 0px; word-break: break-all; font-weight: 700;"><span style="letter-spacing: 0.2px;"><font color="#ff0000">警告：我此处使用的是win10安装的docker，如果你使用云服务器，记得在安全组开放22122和8888这两个端口，否则将代码将无法连接。</font></span></span>
 
+使用七牛或者阿里OSS记得到配置文件中修改key等参数。
+
+
 <span style="outline-style: initial; outline-width: 0px; word-break: break-all; font-weight: 700;">项目地址：[https://github.com/HWYWL/spring-boot-docker-fsatdfs](https://github.com/HWYWL/spring-boot-docker-fsatdfs)</span>
 
 <span style="outline-style: initial; outline-width: 0px; word-break: break-all; font-weight: 700;">效果图：</span>
