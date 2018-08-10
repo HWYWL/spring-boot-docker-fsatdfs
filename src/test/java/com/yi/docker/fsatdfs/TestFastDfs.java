@@ -26,8 +26,8 @@ public class TestFastDfs {
         StorageClient storageClient = new StorageClient(trackerServer, storageServer);
         // 使用StorageClient对象上传文件(图片)
         // 参数1：文件名，参数名：扩展名，不能包含"."，参数3：文件的元数据，保存文件的原始名、大小、尺寸等，如果没有可为null
-//        String[] strings = storageClient.upload_file("E:\\图库\\1 (74).jpg", "jpg", null);
-        String[] strings = storageClient.upload_file("E:\\图库\\壁纸\\1 (1).jpg", "jpg", null);
+        String[] strings = storageClient.upload_file("E:\\图库\\1 (74).jpg", "jpg", null);
+//        String[] strings = storageClient.upload_file("E:\\图库\\壁纸\\1 (1).jpg", "jpg", null);
 
         int port = ClientGlobal.getG_tracker_http_port();
         String serverIp = trackerServer.getInetSocketAddress().getHostString();
